@@ -2,12 +2,12 @@ using System;
 
 namespace MailMaster
 {
-    public class GlobalMessages
+    public class GlobalAppInfo
     {
-        public string AppName = " MailMaster";
+        public string AppName = "MailMaster";
         public double Version = 1.0;
         public string DistributorName = "Dierk-Bent Piening";
-        public int StartDevYear = 1996;
+        public int StartDevYear = 2021;
         public string LicenseName = "MIT License";
         private string _argStructure;
         public string ArgStructure
@@ -19,14 +19,14 @@ namespace MailMaster
         public int ActualMonth => DateTime.Now.Month;
         public int ActualDay => DateTime.Now.Day;
 
-        public string GetAppInfoMessag()
+        public string GetAppInfoMessage()
         {
-            return $"{AppName} Version {Version}\n(C) {StartDevYear} - {ActualYear} {DistributorName}\n All rights reserved.\n Licensed under {LicenseName}";
+            return $"{AppName} Version {Version}\n(C) {StartDevYear} - {ActualYear} {DistributorName}\nAll rights reserved.\nLicensed under {LicenseName}";
         }
         
-        public string GetArgMissmatchErrorMessag(int counter, int counterExpected)
+        public string GetArgMissmatchErrorMessage(int counter, int counterExpected)
         {
-            return $"{AppName} Error: You entered {counter} Arguments, but {counterExpected} are required\n";
+            return $"{AppName} Error: You entered {counter} Arguments, but {counterExpected} are required\nArguments: \n{this._argStructure}";
         }
     }
 }
