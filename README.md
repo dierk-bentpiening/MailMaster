@@ -1,7 +1,7 @@
 # MailMaster
 Commandline SMTP Client
 
-##Introduction
+## Introduction
 MailMaster is an .NET Command line SMTP Client for SysCall usage.
 Microsoft Office 365 Changed their Client Requirements and only allows Connections of Clients with TLS Support.
 
@@ -12,7 +12,7 @@ All required Parameters will be passed through the CLI or the Syscall.
 
 ![mailmaster](https://user-images.githubusercontent.com/62020056/150222510-bbf7ad9f-221b-474b-a63b-29fbcd7803c1.png)
 
-##Usage
+## Usage
 All required arguments need to be given and passed in the given order, optional arguments can be passed by given keyword:<value> as an example cc:test@test.com or attachment:picture.jpg
 
 
@@ -20,27 +20,27 @@ All required arguments need to be given and passed in the given order, optional 
 MailMaster.exe <'required' host> <'required' email_address/username sender> <'required' password> <subject> <'required'body> <'optional' cc:<emailadress>> <'optional' attachment:<path>> 
 ```
 
-####How to send to multiple Recipients or CC Recipients ?
+#### How to send to multiple Recipients or CC Recipients ?
 Sending to multiple Recipients is possible by passing it separated through an ",".
 Your Memory is the limit 🤓
 
-#####Example
+##### Example
 `test1@test.com,test2@test.com,test3@test.com`
 
 
 
-####How to attach an File?
+#### How to attach an File?
 Use the 'attachment' keyboard after the required parameters.
 
-#####Example
+##### Example
 `attachment:/path/to/file.jpg`
 
-##Logging
+## Logging
 MailMaster generates a Log File for every new day with the Date in the File name.
 It is located inside of the Runtime Directory.
 All Messages and Events get logged to the Log File.
 
-##Technical
+## Technical
 MailMaster is Developed in C# .NET Core.
 
 It runs under every Plattform supported by the .NET Runtime.
