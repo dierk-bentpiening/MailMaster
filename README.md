@@ -1,5 +1,6 @@
 # MailMaster
-Commandline SMTP Client
+**Commandline SMTP Client with massmailing support!**
+(Windows, Windows on Arm, MacOS, Linux)
 
 ## Introduction
 MailMaster is an .NET Command line SMTP Client for SysCall usage.
@@ -12,8 +13,16 @@ All required Parameters will be passed through the CLI or the Syscall.
 
 ![mailmaster](https://user-images.githubusercontent.com/62020056/150222510-bbf7ad9f-221b-474b-a63b-29fbcd7803c1.png)
 
+## Release
+Actual Release Version is 1.1.0
+I do Build Versions for Windows, MacOS and Linux, also there are Special Builds for Windows on Arm (WOA) ARM/ARM64.
+Also Linux ARM/ARM64 and MUSL Versions are Available.
+
+### [Goto actual Release Version](https://github.com/dierk-bentpiening/MailMaster/releases)
+
+
 ## Usage
-All required arguments need to be given and passed in the given order, optional arguments can be passed by given keyword:<value> as an example cc:test@test.com or attachment:picture.jpg
+All required arguments need to be given and passed in **the given order**, optional arguments can be passed by given keyword:<value> as an example cc:test@test.com or attachment:picture.jpg
 
 
 ```
@@ -30,7 +39,7 @@ Your Memory is the limit 🤓
 
 
 #### How to attach an File?
-Use the 'attachment' keyboard after the required parameters.
+Use the 'attachment' keyword after the required parameters.
 
 ##### Example
 `attachment:/path/to/file.jpg`
@@ -39,13 +48,14 @@ Use the 'attachment' keyboard after the required parameters.
 MailMaster generates a Log File for every new day with the Date in the File name.
 It is located inside of the Runtime Directory.
 All Messages and Events get logged to the Log File.
+## Miss a Feature ?
+You miss a feature, then open an Issue on GitHub and i will give my best to implement it fastly, same for bugs ;-)
 
 ## Technical
-MailMaster is Developed in C# .NET Core.
-
+MailMaster is Developed in C# .NET Core 6.0.
 It runs under every Plattform supported by the .NET Runtime.
 
-MailMaster does not use any Thirdparty Depencies only Plain Vanilla .NET.
+MailMaster does not use any Thirdparty Depencies only Plain Vanilla .NET it should be support every plattform where an .NET oder MONO Environment is available.
 
 
 
