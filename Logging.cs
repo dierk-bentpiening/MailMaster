@@ -79,5 +79,10 @@ namespace MailMaster
             Console.WriteLine(messageBuffer);
             FileWriter(messageBuffer);
         }
+        public void LogSilent(string message)
+        {
+            var messageBuffer = $"\n{_time} {_date} - [SILENT EXCEPTION]: {message}";
+            FileWriter(messageBuffer);
+        }
     }
 }

@@ -5,7 +5,7 @@ namespace MailMaster
     public class GlobalAppInfo
     {
         public string AppName = "MailMaster";
-        public double Version = 1.0;
+        public double Version = 1.1;
         public string DistributorName = "Dierk-Bent Piening";
         public int StartDevYear = 2021;
         public string LicenseName = "MIT License";
