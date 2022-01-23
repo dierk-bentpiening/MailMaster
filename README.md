@@ -1,6 +1,20 @@
 # MailMaster
 **Commandline SMTP Client with massmailing support!**
 (Windows, Windows on Arm, MacOS, Linux)
+___
+# Table of Contents
+1. [Introduction](#introduction)
+2. [Release](#release)
+3. [Usage](#usage)
+   1. [How to send to multiple Recipients or CC Recipients](#how-to-send-to-multiple-recipients-or-cc-recipients)
+      1. [Example](#example)
+   2. [How to Attach an File](#how-to-attach-an-file)
+      1. [Example](#example-attachment)
+4. [Logging](#logging)
+5. [Miss a Feature](#miss-a-feature)
+6. [Technical Description](#technical)
+
+---
 
 ## Introduction
 MailMaster is an .NET Command line SMTP Client for SysCall usage.
@@ -13,13 +27,16 @@ All required Parameters will be passed through the CLI or the Syscall.
 
 ![mailmaster](https://user-images.githubusercontent.com/62020056/150222510-bbf7ad9f-221b-474b-a63b-29fbcd7803c1.png)
 
+---
+
 ## Release
 Actual Release Version is 1.1.0
 I do Build Versions for Windows, MacOS and Linux, also there are Special Builds for Windows on Arm (WOA) ARM/ARM64.
 Also Linux ARM/ARM64 and MUSL Versions are Available.
 
-### [Goto actual Release Version](https://github.com/dierk-bentpiening/MailMaster/releases)
+[Goto actual Release Version](https://github.com/dierk-bentpiening/MailMaster/releases)
 
+---
 
 ## Usage
 All required arguments need to be given and passed in **the given order**, optional arguments can be passed by given keyword:<value> as an example cc:test@test.com or attachment:picture.jpg
@@ -41,15 +58,22 @@ Your Memory is the limit 🤓
 #### How to attach an File?
 Use the 'attachment' keyword after the required parameters.
 
-##### Example
+##### Example attachment
 `attachment:/path/to/file.jpg`
+
+---
 
 ## Logging
 MailMaster generates a Log File for every new day with the Date in the File name.
 It is located inside of the Runtime Directory.
 All Messages and Events get logged to the Log File.
+
+---
+
 ## Miss a Feature ?
 You miss a feature, then open an Issue on GitHub and i will give my best to implement it fastly, same for bugs ;-)
+
+---
 
 ## Technical
 MailMaster is Developed in C# .NET Core 6.0.
